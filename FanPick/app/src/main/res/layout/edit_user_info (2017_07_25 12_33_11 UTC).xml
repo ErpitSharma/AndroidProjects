@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="10dp">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/previewImage"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@android:drawable/gallery_thumb"
+        android:tag="click to change"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click to change"
+        android:layout_gravity="center"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/quoteEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quote"
+                android:inputType="textShortMessage"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userEditCancel"
+            android:text="Cancel"
+            />
+
+        <Button
+            android:id="@+id/userEditSave"
+            android:layout_marginLeft="@dimen/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+</LinearLayout>

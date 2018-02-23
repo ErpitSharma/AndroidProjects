@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:textOn="Stop"
+        android:textOff="Start"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="73dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Lap"
+        android:textOff="Reset"
+        android:layout_marginRight="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_alignBaseline="@+id/toggleButton3"
+        android:layout_alignBottom="@+id/toggleButton3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/linearLayout"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="00" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+
+        android:padding="4dp"
+        android:text=":"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+
+        android:text="00" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+
+        android:padding="4dp"
+        android:text=":"
+        />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+
+        android:text="00" />
+
+
+</LinearLayout>
+</RelativeLayout>

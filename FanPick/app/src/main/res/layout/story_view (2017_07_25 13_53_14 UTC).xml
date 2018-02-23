@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#66DDDDDD"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:textAlignment="gravity"
+        >
+
+    <TextView
+        android:id="@+id/storyTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  by- " />
+
+        <TextView
+        android:id="@+id/storyAuthorView"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="Author" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/storyDescriptionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="150dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="" />
+
+
+        <RatingBar
+            android:id="@+id/storyRatingView"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX=".5"
+            android:scaleY=".5" />
+</LinearLayout>

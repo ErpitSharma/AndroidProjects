@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PenName"
+            android:inputType="textAutoCorrect"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Short Description"
+            android:inputType="textMultiLine"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduction"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:textSize="@dimen/title"
+        />
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/workSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:hint="Start typing.."
+        android:gravity="top"
+        android:textAlignment="gravity"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionContainer"
+        android:orientation="vertical"
+        ></LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_marginLeft="@dimen/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
